@@ -6,8 +6,8 @@ if (!Array.prototype.forEachAsync) {
     Object.defineProperty(Array.prototype, 'forEachAsync', {
         enumerable: false,
         writable: true,
-        value: async function(callback) {
-            await forEachAsync(this, callback);
+        value: function(callback) {
+            return forEachAsync(this, callback);
         }
     });
 

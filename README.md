@@ -1,21 +1,22 @@
 [//]: #@corifeus-header
 
-[![Build Status](https://travis-ci.org/patrikx3/corifeus-utils.svg?branch=master)](https://travis-ci.org/patrikx3/corifeus-utils)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/patrikx3/corifeus-utils/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/corifeus-utils/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/corifeus-utils/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/corifeus-utils/?branch=master)  [![Trello](https://img.shields.io/badge/Trello-Corifeus-026aa7.svg)](https://trello.com/b/3NArfcD1/corifeus)
-  
-[![NPM](https://nodei.co/npm/corifeus-utils.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/corifeus-utils/)
-------
 
 # Corifeus Utils - Memory
 
 ### Node Version Requirement 
-``` >=7.8.0 ```  
+``` 
+>=7.8.0 
+```  
    
 The ```async``` and ```await``` keywords are required.
 
+Install NodeJs:    
+https://nodejs.org/en/download/package-manager/    
+  
 # Description
 
+
+---
 
 [//]: #@corifeus-header:end
 
@@ -44,9 +45,9 @@ const utils = require('corifeus-utils');
 [//]: #@corifeus-footer
 
 ---
-[**CORIFEUS-UTILS**](https://pages.corifeus.tk/corifeus-utils) Build v1.1.11-132 on 5/5/2017, 1:33:34 PM
+[**CORIFEUS-UTILS**](https://pages.corifeus.tk/corifeus-utils) Build v1.1.127-21
 
-[Corifeus](http://github.com/patrikx3/corifeus) by [Patrik Laszlo](http://patrikx3.tk)
+[Corifeus](http://www.corifeus.tk)) by [Patrik Laszlo](http://patrikx3.tk)
  
 
 [//]: #@corifeus-footer:end
