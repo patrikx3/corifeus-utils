@@ -1,6 +1,5 @@
-require('./lodash')
-
 module.exports = {
+    lodash: require('./lodash'),
     error: require('./error'),
     process: require('./process'),
     base: require('./base'),
@@ -15,5 +14,8 @@ module.exports = {
     promise: require('./promise'),
     fs: require('./fs'),
     db: require('./db'),
+    regexp: require('./regexp'),
+    json: require('./json'),
+    require: require('./require'),
 }
 

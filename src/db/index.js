@@ -17,6 +17,22 @@ const db =  function(dbFile, data) {
         data._updatedAt = getTime();
     }
 
+    Object.defineProperty(this, 'raw', {
+        get: () => {
+            return data;
+        }
+    })
+
+    this.exists = function(entity, key) {
+        if (!data.hasOwnProperty(entity)) {
+            return false;
+        }
+        if (!data[entity].hasOwnProperty(key)) {
+            return false;
+        }
+        return true;
+    }
+
     this.save = function(entity, key, saveData) {
         if (!data.hasOwnProperty(entity)) {
             data[entity] = {};

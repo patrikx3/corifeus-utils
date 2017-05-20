@@ -1,10 +1,11 @@
 const fs = require('fs');
 const crypto = require('crypto');
+const random = require('./random');
 
-const fileHash = (file, cryptoName = 'sha256', key = 'corifeus-hash-unsecure') => {
+const fileHash = async (file, cryptoName = 'sha256') => {
     return new Promise((resolve, reject) => {
         const fstream = fs.createReadStream(file);
-        const hash = crypto.createHash(cryptoName, key);
+        const hash = crypto.createHash(cryptoName);
         fstream.on('error', reject);
         fstream.on('end', function() {
             hash.end();
