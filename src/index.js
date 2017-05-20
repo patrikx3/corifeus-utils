@@ -19,3 +19,8 @@ module.exports = {
     require: require('./require'),
 }
 
+const repeat = async (count, callback, serial) => {
+    return await new Array(count).forEachAsync(callback, serial);
+}
+
+module.exports.repeat = repeat;
