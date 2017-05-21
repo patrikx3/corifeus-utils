@@ -98,7 +98,7 @@ https://github.com/digitaldesignlabs/es6-promisify
 [//]: #@corifeus-footer
 
 ---
-[**CORIFEUS-UTILS**](https://pages.corifeus.tk/corifeus-utils) Build v1.1.277-61
+[**CORIFEUS-UTILS**](https://pages.corifeus.tk/corifeus-utils) Build v1.1.279-63
 
 [Corifeus](http://www.corifeus.tk) by [Patrik Laszlo](http://patrikx3.tk)
 
