@@ -63,9 +63,9 @@ const utils = require('corifeus-utils');
 * regexp
   * escape
 * random
-  * base62
+  * async (default is base62)
 * promise
-  * extract
+  * extract (simple adds the reject, resolve, promise, instead callback)
 * process
   * unhandledRejection
   * uncaughtException
@@ -73,7 +73,7 @@ const utils = require('corifeus-utils');
 * object
   * reduce
 * hash
-  * file
+  * async file
 * string
   * padStart
   * empty
@@ -81,24 +81,19 @@ const utils = require('corifeus-utils');
 * lodash
   * PascalCase
 * http
-  * request 
+  * async request
 * db
-  * file based
+  * file based json storage
 * child-process
-  * exec, romise
+  * async exec
 * array
-  * for each async
-  
-# Promisefy
-  
-https://github.com/digitaldesignlabs/es6-promisify  
-  
+  * forEachAsync, async for each
 
   
 [//]: #@corifeus-footer
 
 ---
-[**CORIFEUS-UTILS**](https://pages.corifeus.tk/corifeus-utils) Build v1.1.279-63
+[**CORIFEUS-UTILS**](https://pages.corifeus.tk/corifeus-utils) Build v1.1.303-88
 
 [Corifeus](http://www.corifeus.tk) by [Patrik Laszlo](http://patrikx3.tk)
 

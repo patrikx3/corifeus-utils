@@ -1,5 +1,5 @@
 const childProcess = require('child_process');
-const promisable = require('../promise');
+const promiseUtil = require('../promise');
 
 module.exports.exec = (command, options) => {
     if (options === true) {
@@ -12,7 +12,7 @@ module.exports.exec = (command, options) => {
 
     options.display = options.display || false;
 
-    const { resolve, reject, promise} = promisable.extract();
+    const { resolve, reject, promise} = promiseUtil.deferred();
     const run = childProcess.exec(command, options, (err, stdout, stderr) => {
         if (err) {
             reject(err);

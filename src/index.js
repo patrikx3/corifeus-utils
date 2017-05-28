@@ -17,10 +17,15 @@ module.exports = {
     regexp: require('./regexp'),
     json: require('./json'),
     require: require('./require'),
+    timer: require('./timer'),
 }
 
-const repeat = async (count, callback, serial) => {
-    return await new Array(count).forEachAsync(callback, serial);
+const repeat = (count, callback) => {
+    return [...Array(count).keys()].forEach(callback);
+}
+
+repeat.async = async (count, callback, serial) => {
+    return await [...Array(count).keys()].forEachAsync(callback, serial);
 }
 
 module.exports.repeat = repeat;

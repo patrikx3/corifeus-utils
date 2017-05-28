@@ -14,7 +14,7 @@ const ensureDir = async (dir) => {
 const ensureFile = async(file, defaultData = '') => {
     const exists = await mz.fs.exists(file);
     if (exists) {
-        return await mz.fs.readFile(file);
+        return true;
     }
     if (typeof(defaultData) === 'object') {
         defaultData = JSON.stringify(defaultData);
@@ -22,8 +22,9 @@ const ensureFile = async(file, defaultData = '') => {
 
     await fsExtra.ensureDir(path.dirname(file));
     await mz.fs.writeFile(file, defaultData)
-    return defaultData;
+    return false;
 }
 
 module.exports.ensureFile = ensureFile;
 module.exports.ensureDir = ensureDir;
+module.exports.find = require('./find');

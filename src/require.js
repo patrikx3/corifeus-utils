@@ -6,12 +6,13 @@ const resovleDependencies =(options) => {
         }
     }
 
-    const {
+    let {
         modules,
         recursive,
         debug
     } = options;
 
+    recursive = recursive || [];
     if (debug) {
         dconsole = console;
     } else {
