@@ -18,6 +18,7 @@ module.exports = {
     json: require('./json'),
     require: require('./require'),
     timer: require('./timer'),
+    input: require('./input'),
 }
 
 const repeat = (count, callback) => {

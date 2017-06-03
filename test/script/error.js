@@ -2,4 +2,4 @@
 
 require('../../src');
 
-throw new Error('hiba');
+throw 400;

@@ -1,6 +1,14 @@
 const promiseUtils = require('./promise');
 
-module.exports.setTimeout = async (cb, timeout) => {
+const wait = async(timeout) => {
+    return await corySetTimeout(timeout);
+}
+
+const corySetTimeout = async (cb, timeout) => {
+    if (timeout === undefined) {
+        timeout = cb;
+        cb = () => {};
+    }
     const { resolve, reject, promise} = promiseUtils.deferred();
 
     promise.timer = setTimeout(async () => {
@@ -15,7 +23,7 @@ module.exports.setTimeout = async (cb, timeout) => {
     return promise;
 }
 
-module.exports.setInterval = async(cb, timeout) => {
+const corySetInterval = async(cb, timeout) => {
     const { resolve, reject, promise} = promiseUtils.deferred();
 
     promise.timer = setInterval(async() => {
@@ -30,3 +38,7 @@ module.exports.setInterval = async(cb, timeout) => {
 
     return promise;
 }
+
+module.exports.wait = wait;
+module.exports.setTimeout = corySetTimeout;
+module.exports.setInterval = corySetInterval ;

@@ -9,12 +9,12 @@ module.exports.span = (spec) => {
     return result;
 }
 
-module.exports.verbose = (timestamp, started = Date.now()) => {
+module.exports.verbose = (timestamp, started) => {
     if (timestamp === undefined) {
         return undefined;
     }
     return {
-        left: ms(timestamp - started),
+        left: ms(timestamp - Date.now()),
         end: new Date(timestamp).toLocaleString(),
         start: new Date(started).toLocaleString(),
         startstamp: started,

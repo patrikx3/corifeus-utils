@@ -57,6 +57,8 @@ module.exports.request = (options) => {
                     if (res.headers.hasOwnProperty('content-type') &&  res.headers['content-type'].startsWith('application/json')) {
                         const parsedData = JSON.parse(rawData);
                         res.body = parsedData;
+                    } else {
+                        res.body = rawData;
                     }
                     resolve(res);
                 } catch (e) {
