@@ -98,7 +98,7 @@ const utils = require('corifeus-utils');
 [//]: #@corifeus-footer
 
 ---
-[**CORIFEUS-UTILS**](https://pages.corifeus.tk/corifeus-utils) Build v1.1.333-28
+[**CORIFEUS-UTILS**](https://pages.corifeus.tk/corifeus-utils) Build v1.1.336-29
 
 [Corifeus](http://www.corifeus.tk) by [Patrik Laszlo](http://patrikx3.tk)
 
