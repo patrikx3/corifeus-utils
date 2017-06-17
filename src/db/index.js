@@ -2,7 +2,10 @@ const coryFs = require('../fs');
 const mz = require('mz');
 
 const load = async (dbFile, data = {}) => {
-    data = await coryFs.ensureFile(dbFile, data)
+    const exists = await coryFs.ensureFile(dbFile, data)
+    if (exists) {
+        data = await mz.fs.readFile(dbFile);
+    }
     data = JSON.parse(data.toString());
     return new db(dbFile, data);
 }

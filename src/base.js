@@ -1,5 +1,10 @@
 const base62Charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 
+const base36Charset = 'abcdefghijklmnopqrstuvwxyz0123456789';
+
+module.exports.base36Charset = base36Charset;
+module.exports.base62Charset = base62Charset;
+
 module.exports.charset = (bytes, charset = base62Charset) => {
     let string = ''
     for(let index = 0; index < bytes.length; index++) {

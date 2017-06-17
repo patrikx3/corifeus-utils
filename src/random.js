@@ -9,3 +9,10 @@ module.exports = async(length = 128) =>  {
 module.exports.integer = (min = 0, max = Int.MAX_INTEGER) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+module.exports.lower = async(length = 16) => {
+    const random = await crypto.randomBytes(length);
+    const base = require('./base');
+    const string = base.charset(random, base.base36Charset)
+    return string;
+}
