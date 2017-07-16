@@ -15,7 +15,7 @@ This is an open source project. Just code.
    
 ### Built on Node 
 ``` 
-v8.1.3
+v8.1.4
 ```   
    
 The ```async``` and ```await``` keywords are required.
@@ -89,7 +89,7 @@ const utils = require('corifeus-utils');
 
 ---
 
-[**CORIFEUS-UTILS**](https://pages.corifeus.com/corifeus-utils) Build v1.1.359-54
+[**CORIFEUS-UTILS**](https://pages.corifeus.com/corifeus-utils) Build v1.1.365-59
 
 [Corifeus](http://www.corifeus.com) by [Patrik Laszlo](http://patrikx3.com)
 
