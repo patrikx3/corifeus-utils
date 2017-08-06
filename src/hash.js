@@ -17,4 +17,11 @@ const fileHash = async (file, cryptoName = 'sha256') => {
     })
 }
 
+
+const stringHash = (string, cryptoName = 'sha256') => {
+    return crypto.createHash(cryptoName).update(string).digest("hex");
+}
+
+module.exports.string= stringHash;
+
 module.exports.file = fileHash;

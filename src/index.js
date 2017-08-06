@@ -19,6 +19,7 @@ module.exports = {
     require: require('./require'),
     timer: require('./timer'),
     input: require('./input'),
+    network: require('./network'),
 }
 
 const repeat = (count, callback) => {
