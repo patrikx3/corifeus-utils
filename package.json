@@ -1,6 +1,6 @@
 {
     "name": "corifeus-utils",
-    "version": "1.1.457-127",
+    "version": "1.1.460-128",
     "corifeus": {
         "icon": "fa fa-lightbulb-o",
         "code": "Memory",
@@ -33,7 +33,7 @@
     },
     "homepage": "https://pages.corifeus.com/corifeus-utils",
     "devDependencies": {
-        "corifeus-builder": "^1.7.777-107"
+        "corifeus-builder": "^1.7.780-108"
     },
     "dependencies": {
         "fs-extra": "^4.0.1",
