@@ -15,9 +15,9 @@ const ensureDir = async (dir) => {
     await fsExtra.ensureDir(dir);
 }
 
-const ensureFile = async(file, defaultData = '') => {
+const ensureFile = async(file, defaultData = '', alwaysWrite = false) => {
     const exists = await mz.fs.exists(file);
-    if (exists) {
+    if (exists && !alwaysWrite) {
         return true;
     }
     if (typeof(defaultData) === 'object') {
