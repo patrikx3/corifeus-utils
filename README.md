@@ -90,7 +90,7 @@ const utils = require('corifeus-utils');
 
 ---
 
-[**CORIFEUS-UTILS**](https://pages.corifeus.com/corifeus-utils) Build v1.1.508-158
+[**CORIFEUS-UTILS**](https://pages.corifeus.com/corifeus-utils) Build v1.1.511-160
 
 [Corifeus](http://www.corifeus.com) by [Patrik Laszlo](http://patrikx3.com)
 
