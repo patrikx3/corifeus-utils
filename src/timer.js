@@ -12,7 +12,7 @@ const wait = async(timeout) => {
 
 const waitFile = async(timeout = 20000, file) => {
     if (file === undefined) {
-        file = `${os.tmpdir()}/p3x-wait-file-${path.parse(process.argv[1]).name}-${hash.string(process.argv[1])}.boot`
+        file = `${os.tmpdir()}/p3x-wait-file-${path.parse(process.argv[1]).name}-${hash.string(process.argv.join())}.boot`
     }
     const exists = await fsExtra.pathExists(file);
     if (exists) {
@@ -26,6 +26,7 @@ const waitFile = async(timeout = 20000, file) => {
     return {
         timeout: timeout,
         file: file,
+        exists: exists,
     }
 }
 
