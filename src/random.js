@@ -1,4 +1,5 @@
 const crypto = require('mz/crypto');
+const uuid = require('uuid');
 
 module.exports = async(length = 128) =>  {
     const random = await crypto.randomBytes(length);
@@ -20,4 +21,8 @@ module.exports.lower = async(length = 16) => {
     const base = require('./base');
     const string = base.charset(random, base.base36Charset)
     return string;
+}
+
+module.exports.complexUuid = () => {
+    return `${uuid.v4()}-${uuid.v1()}`
 }
