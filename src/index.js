@@ -1,3 +1,9 @@
+//const os = require('os');
+//const process = require('process');
+//const cores = os.cpus().length < 4 ? 4 : os.cpus().length;
+//process.env.UV_THREADPOOL_SIZE = cores;
+//console.debug(`Corifeus Utils sets UV_THREADPOOL_SIZE to ${cores} thread pool`)
+
 module.exports = {
     lodash: require('./lodash'),
     error: require('./error'),

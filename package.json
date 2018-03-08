@@ -1,11 +1,11 @@
 {
     "name": "corifeus-utils",
-    "version": "1.1.836-291",
+    "version": "1.1.854-302",
     "corifeus": {
         "icon": "fa fa-lightbulb-o",
         "code": "Memory",
         "publish": true,
-        "nodejs": "v9.7.1"
+        "nodejs": "v9.8.0"
     },
     "description": "Corifeus Utils - Memory",
     "main": "src/index.js",
@@ -33,11 +33,10 @@
     },
     "homepage": "https://pages.corifeus.com/corifeus-utils",
     "devDependencies": {
-        "corifeus-builder": "^1.7.1229-312"
+        "corifeus-builder": "^1.7.1241-317"
     },
     "dependencies": {
         "fs-extra": "^5.0.0",
-        "glob": "^7.1.2",
         "lodash": "^4.17.5",
         "ms": "^2.1.1",
         "mz": "^2.7.0",
