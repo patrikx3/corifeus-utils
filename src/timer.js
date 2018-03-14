@@ -1,5 +1,4 @@
 const promiseUtils = require('./promise');
-const fsExtra = require('fs-extra');
 const os = require('os');
 const mzFs = require('mz/fs');
 const hash = require('./hash');
@@ -11,6 +10,8 @@ const wait = async(timeout) => {
 }
 
 const waitFile = async(timeout = 20000, file) => {
+    const fsExtra = require('fs-extra');
+
     if (file === undefined) {
         file = `${os.tmpdir()}/p3x-wait-file-${path.parse(process.argv[1]).name}-${hash.string(process.argv.join())}.boot`
     }
