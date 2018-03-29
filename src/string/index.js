@@ -25,11 +25,11 @@ module.exports.inject = (str, options) => {
 
     const findPrefix = str.indexOf(options.prefix);
     const postixIndex = str.indexOf(options.postfix);
-    if (findPrefix == -1 && postixIndex == -1 && !options.header && !options.footer) {
+    if (findPrefix === -1 && postixIndex === -1 && !options.header && !options.footer) {
         return;
     }
 
-    if (findPrefix == -1 && postixIndex == -1 ) {
+    if (findPrefix === -1 && postixIndex === -1 ) {
         let replaceText = options.prefix + '\n' + options.replace + '\n' + options.postfix;
         if (options.header) {
             str = replaceText + '\n' +str;

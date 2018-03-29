@@ -27,6 +27,7 @@ module.exports = {
     input: require('./input'),
     network: require('./network'),
     redis: require('./redis'),
+    crypto: require('./crypto'),
 }
 
 const repeat = (count, callback) => {
