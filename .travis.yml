@@ -1,6 +1,8 @@
 language: node_js
 node_js:
-  - "node"
+- node
 before_script:
-  - npm install grunt-cli -g
-
+- npm install grunt-cli -g
+env:
+  global:
+    secure: kLsUjLDzxshuWD4LcoDV4Dym7DCNlNocyRaP7eeKxX+K86pWxPgkDUQ9niJW9kA4OjckOgTwrhBwrIT+HMDpfZZME/FZIHrNuEPtw4hfcTbPPMfS9qfpmP5GPK0HlmMBZ0QPMGvfw8HSjkq0WF1GZYFIi59aXrRo2jxrcea44TNVfCl/2ipyZmFO/1y1LlkmtMdeQqPe8A84pU1rI0GRrht7Z9x6dWWCLXr+dmU/cMrGgIaWvJqtvI7uTAjEEN1nQxaL7TWgxsMR5+lq2aHJGx7KtciWsMA2bci2zmYkmFrRUQ1jCqCtxWnY+/27QZUqFr6By0gaMqo+QKtW3SGbIYod6xGVwQa/pL6tCL1TYyAG4tZYmx8vEWzlM1j5VTNWekMA/nu9rc1OAnS223nz4LIia2uuzVY1Mdf+TNgcjCM7Zpmkg+XxGVY6gCXUogNuLG5cjAmbCXcIX6+bESrpW2a2uZojJIj9J/3lruGE06TgkyrgRlRjPnCFaXlNZ1QctKKkIiWiRoCvbcj3wlLAo5OYA9xBTZxQ8D6gbSbyMUJ/lW1Zyc+n855hG2iDcOsmh8IGo8IWudds1fSPMeDSOKkyKQv34ryES7tfP81Yu8MDx8SWXR6MmlPZHyP+3LBBeZ/sK7B3k8VcWnOI/iy1w8UT7ZIHYsUERRqCY7POeIM=

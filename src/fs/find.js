@@ -79,6 +79,7 @@ module.exports = async (options) => {
         }
         excluder('node_modules')
         excluder('bower_components')
+        excluder('vendor')
     }
 
     if (options.dry || options.debug) {
