@@ -5,7 +5,7 @@
   
 [![NPM](https://nodei.co/npm/corifeus-utils.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/corifeus-utils/)
 ---
-# Corifeus Utils - Memory v1.1.946-341  
+# ❤️ Corifeus Utils - Memory v1.1.946-341  
 
 This is an open-source project. Star this repository if you like it, or even donate!  Thank you so much! :)
 
