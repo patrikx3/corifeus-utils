@@ -52,7 +52,7 @@ const coryRequest = (options) => {
         options.method = 'GET';
     }
 
-   const promise = new Promise((resolve, reject) => {
+    const promise = new Promise((resolve, reject) => {
 
         try {
             const req = request(options, (response) => {
@@ -75,8 +75,12 @@ const coryRequest = (options) => {
                 response.on('end', () => {
                     try {
                         if (response.headers.hasOwnProperty('content-type') &&  response.headers['content-type'].startsWith('application/json')) {
-                            const parsedData = JSON.parse(rawData);
-                            response.body = parsedData;
+                            if (typeof rawData !== 'undefined' && rawData !== '') {
+                                const parsedData = JSON.parse(rawData);
+                                response.body = parsedData;
+                            } else {
+                                response.body = {};
+                            }
                         } else {
                             response.body = rawData;
                         }
