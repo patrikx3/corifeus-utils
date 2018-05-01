@@ -10,7 +10,7 @@ const encrypt = (options) => {
             algorithm = defaultAlgorithm;
         }
 
-        const cipher = crypto.createCipher(algorithm, pass)
+        const cipher = crypto.createCipheriv(algorithm, pass)
 
         let encrypted = '';
         cipher.on('readable', () => {

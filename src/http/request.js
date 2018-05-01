@@ -86,6 +86,7 @@ const coryRequest = (options) => {
                         }
                         resolve(response);
                     } catch (e) {
+                        e.requestRawText = rawData
                         reject(e);
                     }
                 });
