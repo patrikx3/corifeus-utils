@@ -66,5 +66,5 @@ module.exports.ensureDir = ensureDir;
 module.exports.find = require('./find');
 module.exports.ensureTempFile = ensureTempFile;
 module.exports.tempFileName = tempFileName;
-
+module.exports.readdirRecursive = require('./readdir-recursive')
 module.exports.createWriteStream = createWriteStream;

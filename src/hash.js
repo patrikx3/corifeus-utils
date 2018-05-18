@@ -1,6 +1,5 @@
 const fs = require('fs');
 const crypto = require('crypto');
-const random = require('./random');
 
 const fileHash = async (file, cryptoName = 'sha256') => {
     return new Promise((resolve, reject) => {
