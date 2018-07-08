@@ -52,6 +52,25 @@ const coryRequest = (options) => {
         options.method = 'GET';
     }
 
+    const urlParsed = new url.URL(options.url)
+
+    /*
+    console.log(!options.headers.hasOwnProperty('Authorization'))
+    console.log(!options.headers.hasOwnProperty('authorization'))
+    console.log(urlParsed.username )
+    console.log(urlParsed.password)
+    */
+
+    if ((!options.headers.hasOwnProperty('Authorization') || !options.headers.hasOwnProperty('authorization')) && (urlParsed.username !== '' || urlParsed.password !== '')) {
+        const auth = `Basic ${Buffer.from((urlParsed.username || '') + ':' + (urlParsed.password || '')).toString('base64')}`;
+        options.headers['Authorization'] = auth;
+    }
+
+    /*
+    console.log(urlParsed)
+    console.log(options)
+    */
+
     const promise = new Promise((resolve, reject) => {
 
         try {

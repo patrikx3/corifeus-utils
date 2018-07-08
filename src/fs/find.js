@@ -83,7 +83,7 @@ module.exports = async (options) => {
     }
 
     if (options.dry || options.debug) {
-        console.log(`Options: ${JSON.stringify(options, null, 2)}`)
+        console.log(`Options: ${JSON.stringify(options, null, 4)}`)
     }
 
 
