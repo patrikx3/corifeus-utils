@@ -80,6 +80,8 @@ module.exports = async (options) => {
         excluder('node_modules')
         excluder('bower_components')
         excluder('vendor')
+        excluder('dist')
+        excluder('build')
     }
 
     if (options.dry || options.debug) {
