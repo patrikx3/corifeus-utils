@@ -93,7 +93,7 @@ const coryRequest = (options) => {
                 });
                 response.on('end', () => {
                     try {
-                        if (response.headers.hasOwnProperty('content-type') &&  response.headers['content-type'].startsWith('application/json')) {
+                        if (response.headers.hasOwnProperty('content-type') &&  response.headers['content-type'].startsWith('application/json') && options.raw !== true) {
                             if (typeof rawData !== 'undefined' && rawData !== '') {
                                 const parsedData = JSON.parse(rawData);
                                 response.body = parsedData;

@@ -4,7 +4,11 @@ const utils = require('../../src');
 
 const init = async () => {
     try {
-        const request = await utils.http.request('https://installer:CPo5pMUrLOkbhFceu7DKsGp4ee6ZOb9M@storage.ngivr.sygnus.hu/installer/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz');
+        const request = await utils.http.request({
+            // https://installer:titkos-kod@storage.ngivr.sygnus.hu/installer/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+            url: 'https://server.patrikx3.com/api/core/util/random/32',
+            raw: true,
+        });
         console.debug(request.body)
     } catch(e) {
         console.error(e);
