@@ -1,4 +1,4 @@
-const resovleDependencies =(options) => {
+const resovleDependencies = (options) => {
 
     if (Array.isArray(options)) {
         options = {
@@ -17,7 +17,8 @@ const resovleDependencies =(options) => {
         dconsole = console;
     } else {
         dconsole = {
-            info: () => {},
+            info: () => {
+            },
         }
     }
 
@@ -32,12 +33,12 @@ const resovleDependencies =(options) => {
         dconsole.info(`Iteration: ${iteration}`)
         let totalOk = true;
 
-        for(let index = 0 ; index < modules.length; index++) {
+        for (let index = 0; index < modules.length; index++) {
             const loadedModule = modules[index];
             dconsole.info();
             dconsole.info(`Module: ${loadedModule.name}`);
 
-            if (recursive.includes(loadedModule.name) ) {
+            if (recursive.includes(loadedModule.name)) {
                 if (!resovledModules.includes(loadedModule)) {
                     dconsole.info(`Adding to the recursived list`);
                     resovledModules.push(loadedModule);
@@ -51,7 +52,7 @@ const resovleDependencies =(options) => {
             loadedModule.wants.forEach((want) => {
                 let found = false;
                 resovledModules.forEach((resultModule) => {
-                    if (resultModule.name === want ) {
+                    if (resultModule.name === want) {
                         found = true;
                     }
                 })
@@ -75,7 +76,7 @@ const resovleDependencies =(options) => {
     }
 
     let checkCircular;
-    while(!ensureWants()) {
+    while (!ensureWants()) {
         if (checkCircular === undefined) {
             checkCircular = resovledModules.length;
             continue;
@@ -110,4 +111,4 @@ Last wrong factory
     return resovledModules;
 }
 
-module.exports.resovleDependencies  = resovleDependencies;
+module.exports.resovleDependencies = resovleDependencies;

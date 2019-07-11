@@ -11,7 +11,7 @@ if (!Array.prototype.forEachAsync) {
     Object.defineProperty(Array.prototype, 'forEachAsync', {
         enumerable: false,
         writable: true,
-        value: function(callback, serial = false) {
+        value: function (callback, serial = false) {
             return forEachAsync(this, callback, serial);
         }
     });

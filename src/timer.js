@@ -5,11 +5,11 @@ const hash = require('./hash');
 
 const path = require('path');
 
-const wait = async(timeout) => {
+const wait = async (timeout) => {
     return await corySetTimeout(timeout);
 }
 
-const waitFile = async(timeout = 20000, file) => {
+const waitFile = async (timeout = 20000, file) => {
     const fsExtra = require('fs-extra');
 
     if (file === undefined) {
@@ -34,9 +34,10 @@ const waitFile = async(timeout = 20000, file) => {
 const corySetTimeout = async (cb, timeout) => {
     if (timeout === undefined) {
         timeout = cb;
-        cb = () => {};
+        cb = () => {
+        };
     }
-    const { resolve, reject, promise} = promiseUtils.deferred();
+    const {resolve, reject, promise} = promiseUtils.deferred();
 
     promise.timer = setTimeout(async () => {
         try {
@@ -50,10 +51,10 @@ const corySetTimeout = async (cb, timeout) => {
     return promise;
 }
 
-const corySetInterval = async(cb, timeout) => {
-    const { resolve, reject, promise} = promiseUtils.deferred();
+const corySetInterval = async (cb, timeout) => {
+    const {resolve, reject, promise} = promiseUtils.deferred();
 
-    promise.timer = setInterval(async() => {
+    promise.timer = setInterval(async () => {
         try {
             await cb();
             resolve();
@@ -69,4 +70,4 @@ const corySetInterval = async(cb, timeout) => {
 module.exports.wait = wait;
 module.exports.waitFile = waitFile;
 module.exports.setTimeout = corySetTimeout;
-module.exports.setInterval = corySetInterval ;
+module.exports.setInterval = corySetInterval;

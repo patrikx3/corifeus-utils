@@ -4,8 +4,8 @@ const defaultAlgorithm = 'aes256';
 const encrypt = (options) => {
 
     return new Promise((resolve, reject) => {
-        const { data, pass } = options;
-        let { algorithm } = options;
+        const {data, pass} = options;
+        let {algorithm} = options;
         if (algorithm === undefined) {
             algorithm = defaultAlgorithm;
         }
@@ -31,8 +31,8 @@ const encrypt = (options) => {
 
 const decrypt = (options) => {
     return new Promise((resolve, reject) => {
-        const { data, pass  } = options;
-        let { algorithm } = options;
+        const {data, pass} = options;
+        let {algorithm} = options;
         if (algorithm === undefined) {
             algorithm = defaultAlgorithm;
         }

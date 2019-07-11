@@ -15,12 +15,12 @@ const ensureDir = async (dir) => {
     await fsExtra.ensureDir(dir);
 }
 
-const ensureFile = async(file, defaultData = '', alwaysWrite = false) => {
+const ensureFile = async (file, defaultData = '', alwaysWrite = false) => {
     const exists = await mz.fs.exists(file);
     if (exists && !alwaysWrite) {
         return true;
     }
-    if (typeof(defaultData) === 'object') {
+    if (typeof (defaultData) === 'object') {
         defaultData = JSON.stringify(defaultData);
     }
 
@@ -33,7 +33,7 @@ const createWriteStream = (filename) => {
     const stream = fs.createWriteStream(filename);
 
     const promise = new Promise((resolve, reject) => {
-        stream.on('finish', async() => {
+        stream.on('finish', async () => {
             resolve();
         });
 
@@ -47,7 +47,7 @@ const createWriteStream = (filename) => {
 }
 
 const tempFileName = async (extension = 'tmp') => {
-    const randomFile = 'tmp-' + Date.now() +'-' + await random.lower();
+    const randomFile = 'tmp-' + Date.now() + '-' + await random.lower();
     const randomFileFinal = `${tmp}/${randomFile}.${extension}`
     if (await mz.fs.exists(randomFileFinal)) {
         return await tempFileName(extension);

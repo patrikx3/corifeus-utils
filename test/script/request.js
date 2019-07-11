@@ -10,7 +10,7 @@ const init = async () => {
             raw: true,
         });
         console.debug(request.body)
-    } catch(e) {
+    } catch (e) {
         console.error(e);
     }
 

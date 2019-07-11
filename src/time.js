@@ -3,7 +3,7 @@ const timestring = require('timestring');
 
 module.exports.span = (spec) => {
     let result = timestring(spec);
-    if (typeof(result) === 'number') {
+    if (typeof (result) === 'number') {
         result = result * 1000;
     }
     return result;

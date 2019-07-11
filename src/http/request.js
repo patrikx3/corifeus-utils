@@ -2,7 +2,7 @@ const url = require('url');
 
 const coryRequest = (options) => {
 
-    if (typeof(options) === 'string') {
+    if (typeof (options) === 'string') {
         options = {
             url: options,
         }
@@ -35,7 +35,7 @@ const coryRequest = (options) => {
     let body;
     options.headers = options.headers || {};
     if (options.body !== undefined) {
-        if (typeof(options.body) === 'object') {
+        if (typeof (options.body) === 'object') {
             body = JSON.stringify(options.body);
 
             if (!options.headers.hasOwnProperty('Content-Type')) {
@@ -93,7 +93,7 @@ const coryRequest = (options) => {
                 });
                 response.on('end', () => {
                     try {
-                        if (response.headers.hasOwnProperty('content-type') &&  response.headers['content-type'].startsWith('application/json') && options.raw !== true) {
+                        if (response.headers.hasOwnProperty('content-type') && response.headers['content-type'].startsWith('application/json') && options.raw !== true) {
                             if (typeof rawData !== 'undefined' && rawData !== '') {
                                 const parsedData = JSON.parse(rawData);
                                 response.body = parsedData;

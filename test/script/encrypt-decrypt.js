@@ -24,7 +24,7 @@ const start = async () => {
 
         console.log(`Decrypted: ${decrypted}`)
 
-    } catch(e) {
+    } catch (e) {
         console.error(e);
     }
 

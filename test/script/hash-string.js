@@ -2,7 +2,7 @@
 
 const utils = require('../../src');
 
-const start = async() => {
+const start = async () => {
 
     const hash = await utils.hash.string(process.argv[2]);
     console.log(hash);

@@ -2,7 +2,7 @@
 
 const utils = require('../../src');
 
-const start = async() => {
+const start = async () => {
 
     if (process.argv[2] === 'delay') {
         await utils.timer.waitFile();

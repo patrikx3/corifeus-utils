@@ -20,7 +20,7 @@ const multi = async (options) => {
                 });
             }
         }
-        const foundHit= await mz.fs.readdir(options.root)
+        const foundHit = await mz.fs.readdir(options.root)
 
         const foundHitPromises = [];
         await foundHit.forEachAsync(async (foundDir) => {
@@ -53,15 +53,15 @@ module.exports = async (options) => {
     options.results = options.results || [];
 
     options.type = options.type || {
-            d: true,
-            f: true,
-        };
+        d: true,
+        f: true,
+    };
 
     if (!Array.isArray(options.find)) {
         options.find = [options.find];
     }
     options.find = options.find.map(findable => {
-        findable= findable.trim();
+        findable = findable.trim();
         if (findable.startsWith('./')) {
             findable = findable.substr(2);
         }

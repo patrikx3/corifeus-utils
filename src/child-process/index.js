@@ -12,7 +12,7 @@ module.exports.exec = (command, options) => {
 
     options.display = options.display || false;
 
-    const { resolve, reject, promise} = promiseUtil.deferred();
+    const {resolve, reject, promise} = promiseUtil.deferred();
     const run = childProcess.exec(command, options, (err, stdout, stderr) => {
         if (err) {
             reject(err);

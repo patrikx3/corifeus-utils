@@ -10,16 +10,16 @@ function readdirRecursive(startDir) {
 
         function getItemList(readDir) {
 
-            return new Promise((resolve,reject) => {
+            return new Promise((resolve, reject) => {
 
-                fs.readdir(readDir,(err,itemList) => {
+                fs.readdir(readDir, (err, itemList) => {
 
                     if (err) {
                         return reject();
                     }
 
                     // resolve with parent path added to each item
-                    resolve(itemList.map((item) => path.resolve(readDir,item)));
+                    resolve(itemList.map((item) => path.resolve(readDir, item)));
                 });
             });
         }
@@ -28,16 +28,16 @@ function readdirRecursive(startDir) {
 
             function getStat(itemPath) {
 
-                return new Promise((resolve,reject) => {
+                return new Promise((resolve, reject) => {
 
-                    fs.stat(itemPath,(err,stat) => {
+                    fs.stat(itemPath, (err, stat) => {
 
                         if (err) {
                             return reject();
                         }
 
                         // resolve with item path and if directory
-                        resolve({itemPath,isDirectory: stat.isDirectory()});
+                        resolve({itemPath, isDirectory: stat.isDirectory()});
                     });
                 });
             }
@@ -48,7 +48,7 @@ function readdirRecursive(startDir) {
 
         function processItemList(itemList) {
 
-            for (let {itemPath,isDirectory} of itemList) {
+            for (let {itemPath, isDirectory} of itemList) {
                 // if directory add to queue
                 if (isDirectory) {
                     readDirQueue.push(itemPath);

@@ -10,7 +10,7 @@ const load = async (dbFile, data = {}) => {
     return new db(dbFile, data);
 }
 
-const db =  function(dbFile, data) {
+const db = function (dbFile, data) {
     const getTime = () => {
         return Date.now();
     }
@@ -26,7 +26,7 @@ const db =  function(dbFile, data) {
         }
     })
 
-    this.exists = function(entity, key) {
+    this.exists = function (entity, key) {
         if (!data.hasOwnProperty(entity)) {
             return false;
         }
@@ -36,7 +36,7 @@ const db =  function(dbFile, data) {
         return true;
     }
 
-    this.save = function(entity, key, saveData) {
+    this.save = function (entity, key, saveData) {
         if (!data.hasOwnProperty(entity)) {
             data[entity] = {};
         }
@@ -50,7 +50,7 @@ const db =  function(dbFile, data) {
         }
     }
 
-    this.write = async function() {
+    this.write = async function () {
         data._updatedAt = getTime();
         await mz.fs.writeFile(dbFile, JSON.stringify(data, null, 4));
     }

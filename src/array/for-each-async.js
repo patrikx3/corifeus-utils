@@ -2,7 +2,7 @@ const forEachAsync = (array, cb, serial = false) => {
     const promises = [];
     let lastCb;
 
-    for(let index = 0; index < array.length; index++) {
+    for (let index = 0; index < array.length; index++) {
 
         const item = array[index];
         const call = () => {
@@ -11,12 +11,12 @@ const forEachAsync = (array, cb, serial = false) => {
 
         if (serial) {
             if (lastCb === undefined) {
-                lastCb =  cb(item, index)
+                lastCb = cb(item, index)
             } else {
-                lastCb = lastCb.then(() =>  cb(item, index));
+                lastCb = lastCb.then(() => cb(item, index));
             }
         } else {
-            promises.push( cb(item, index))
+            promises.push(cb(item, index))
         }
     }
     if (serial) {

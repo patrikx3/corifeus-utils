@@ -1,4 +1,4 @@
-const escape = function(s) {
+const escape = function (s) {
     return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 };
 

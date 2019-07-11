@@ -13,7 +13,7 @@ module.exports.waitPort = async (options) => {
 
     let actualRetry = 0;
 
-    const { reject, resolve , promise } = utilsPromise.deferred();
+    const {reject, resolve, promise} = utilsPromise.deferred();
 
     const checkPort = () => {
 
@@ -22,7 +22,7 @@ module.exports.waitPort = async (options) => {
         const net = require('net');
         const server = net.createServer();
 
-        server.once('error', function(err) {
+        server.once('error', function (err) {
             if (err.code === 'EADDRINUSE') {
                 // port is currently in use
                 console.info(`Port ${port} in ${host} is opened`);
@@ -32,7 +32,7 @@ module.exports.waitPort = async (options) => {
             }
         });
 
-        server.once('listening', function() {
+        server.once('listening', function () {
             // close the server if listening doesn't fail
             console.info(`Retry ${actualRetry}, Port ${port} in ${host} is not opened`);
             server.close();

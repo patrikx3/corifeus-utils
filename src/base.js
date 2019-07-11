@@ -7,10 +7,10 @@ module.exports.base62Charset = base62Charset;
 
 module.exports.charset = (bytes, charset = base62Charset) => {
     let string = ''
-    for(let index = 0; index < bytes.length; index++) {
+    for (let index = 0; index < bytes.length; index++) {
         const byte = bytes[index];
         const percent = (100 / 256 * byte) / 100;
-        const charIndex = Math.floor(charset.length * percent) ;
+        const charIndex = Math.floor(charset.length * percent);
         const char = charset.charAt(charIndex)
         string += char;
     }
