@@ -82,6 +82,7 @@ module.exports = async (options) => {
         excluder('vendor')
         excluder('dist')
         excluder('build')
+        excluder('build-modules')
     }
 
     if (options.dry || options.debug) {
