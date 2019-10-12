@@ -10,7 +10,7 @@
   
 [![NPM](https://nodei.co/npm/corifeus-utils.png?downloads=true&downloadRank=true)](https://www.npmjs.com/package/corifeus-utils/)
 ---
-# ❤️ Corifeus Utils v2019.10.165  
+# ❤️ Corifeus Utils v2019.10.168  
 
   
 
@@ -24,7 +24,7 @@
    
 ### Built on Node 
 ``` 
-v12.10.0
+v12.11.1
 ```   
    
 The ```async``` and ```await``` keywords are required.
@@ -112,7 +112,7 @@ All my domains ([patrikx3.com](https://patrikx3.com) and [corifeus.com](https://
 
 ---
   
-[**CORIFEUS-UTILS**](https://pages.corifeus.com/corifeus-utils) Build v2019.10.165 
+[**CORIFEUS-UTILS**](https://pages.corifeus.com/corifeus-utils) Build v2019.10.168 
 
 [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) 
 
