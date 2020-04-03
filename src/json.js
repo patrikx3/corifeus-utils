@@ -8,7 +8,7 @@ module.exports.clone = (obj) => {
         throw e
     }
     if (obj === null || obj === undefined) {
-        return undefined
+        return obj
     }
     return cloneDeep(obj);
 }
