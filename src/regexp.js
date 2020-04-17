@@ -1,5 +1,5 @@
 const escape = function (s) {
-    return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+    return String(s).replace(/[\\^$*+?.()|[\]{}]/g, '\\$&');
 };
 
 if (!RegExp.escape) {
