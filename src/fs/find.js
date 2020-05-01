@@ -83,6 +83,7 @@ module.exports = async (options) => {
         excluder('dist')
         excluder('build')
         excluder('build-modules')
+        excluder('release')
     }
 
     if (options.dry || options.debug) {
