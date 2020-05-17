@@ -1,6 +1,6 @@
 {
     "name": "corifeus-utils",
-    "version": "2020.4.175",
+    "version": "2020.4.181",
     "corifeus": {
         "icon": "far fa-lightbulb",
         "code": "Memory",
@@ -36,7 +36,7 @@
     },
     "homepage": "https://corifeus.com/corifeus-utils",
     "devDependencies": {
-        "corifeus-builder": "^2020.4.194"
+        "corifeus-builder": "^2020.4.200"
     },
     "peerDependencies": {
         "lodash": "^4.17.15"
