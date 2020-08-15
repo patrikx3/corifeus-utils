@@ -46,7 +46,7 @@ const coryRequest = (options) => {
     }
 
     if (!options.headers.hasOwnProperty('User-Agent')) {
-        options.headers['User-Agent'] = 'Corifeus-Utils-Request';
+        options.headers['User-Agent'] = 'Corifeus-Utils-Request BOT';
     }
     if (!options.hasOwnProperty('method')) {
         options.method = 'GET';
