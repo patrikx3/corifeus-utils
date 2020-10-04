@@ -1,11 +1,11 @@
 {
     "name": "corifeus-utils",
-    "version": "2020.10.109",
+    "version": "2020.10.113",
     "corifeus": {
         "icon": "far fa-lightbulb",
         "code": "Memory",
         "publish": true,
-        "nodejs": "v12.18.3",
+        "nodejs": "v12.18.4",
         "reponame": "corifeus-utils",
         "opencollective": false,
         "build": true
@@ -36,7 +36,7 @@
     },
     "homepage": "https://corifeus.com/corifeus-utils",
     "devDependencies": {
-        "corifeus-builder": "^2020.10.109"
+        "corifeus-builder": "^2020.10.113"
     },
     "peerDependencies": {
         "lodash": "^4.17.20"
