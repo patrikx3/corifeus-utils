@@ -1,6 +1,6 @@
 const promiseUtils = require('./promise');
 const os = require('os');
-const mzFs = require('mz/fs');
+const fs = require('fs').promises;
 const hash = require('./hash');
 
 const path = require('path');
@@ -23,7 +23,7 @@ const waitFile = async (timeout = 20000, file) => {
         await wait(timeout);
         console.info(`${file} now exists`);
     }
-    await mzFs.writeFile(file, Date.now());
+    await fs.writeFile(file, String(Date.now()));
     return {
         timeout: timeout,
         file: file,
@@ -71,3 +71,5 @@ module.exports.wait = wait;
 module.exports.waitFile = waitFile;
 module.exports.setTimeout = corySetTimeout;
 module.exports.setInterval = corySetInterval;
+
+
