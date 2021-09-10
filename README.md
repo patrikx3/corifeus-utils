@@ -10,7 +10,7 @@
 
 [![NPM](https://nodei.co/npm/corifeus-utils.png?downloads=true&downloadRank=true)](https://www.npmjs.com/package/corifeus-utils/)
 ---
-# ❤️ Corifeus Utils v2021.10.106
+# ❤️ Corifeus Utils v2021.10.108
 
 
 
@@ -47,6 +47,7 @@ const utils = require('corifeus-utils');
   * Async Array Iterator ```forEachAsync```
   * ```JSON.strintify``` for ```Error```
   * Lodash Pascal
+  * Lodash patch to work `_.isEmpty` with `Symbols`
   * Remove silent process ```unhandledRejection``` end ```process.exit()```, adds timestamp
   * Process ```uncaughtException``` that shows timestamp.
   * Random async Base62 string
@@ -85,6 +86,7 @@ const utils = require('corifeus-utils');
   * inject
 * lodash
   * PascalCase
+  * isEmpty
 * http
   * async request
 * db
@@ -110,7 +112,7 @@ All my domains ([patrikx3.com](https://patrikx3.com) and [corifeus.com](https://
 
 ---
 
-[**CORIFEUS-UTILS**](https://corifeus.com/corifeus-utils) Build v2021.10.106
+[**CORIFEUS-UTILS**](https://corifeus.com/corifeus-utils) Build v2021.10.108
 
 [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)
 

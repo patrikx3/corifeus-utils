@@ -1,4 +1,4 @@
-const resovleDependencies = (options) => {
+const resolveDependencies = (options) => {
 
     if (Array.isArray(options)) {
         options = {
@@ -111,4 +111,4 @@ Last wrong factory
     return resovledModules;
 }
 
-module.exports.resovleDependencies = resovleDependencies;
+module.exports.resolveDependencies = resolveDependencies;

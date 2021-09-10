@@ -7,6 +7,16 @@ try {
         return _.snakeCase(name).replace(/_/g, '.');
     }
 
+    const originalIsEmpty = _.isEmpty
+    _.isEmpty = (value) => {
+        const originalResult = originalIsEmpty(value)
+        if (originalResult && value) {
+            const objectSymbols = Object.getOwnPropertySymbols(value);
+            return objectSymbols.length === 0
+        }
+        return originalResult
+    }
+
     module.exports = _;
 } catch (e) {
     console.warn('corifeus-utils warn: looks like lodash is not in you dependecies')
