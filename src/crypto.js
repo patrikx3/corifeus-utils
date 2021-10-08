@@ -36,7 +36,8 @@ const decrypt = (options) => {
         if (algorithm === undefined) {
             algorithm = defaultAlgorithm;
         }
-        const decipher = crypto.createDecipher(algorithm, pass)
+        const iv = Buffer.alloc(16, 0);
+        const decipher = crypto.createDecipheriv(algorithm, pass, iv)
 
         let decrypted = '';
         decipher.on('readable', () => {
