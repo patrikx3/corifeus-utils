@@ -1,3 +1,7 @@
 const utils = require('../../src');
 
-console.log(utils.random.complexUuid())
+const uuid = require('uuid');
+
+console.log('corifeus-utils complex uuid', utils.random.complexUuid())
+console.log('v1', uuid.v1())
+console.log('v4', uuid.v4())
