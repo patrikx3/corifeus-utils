@@ -28,6 +28,7 @@ module.exports = {
     network: require('./network'),
     redis: require('./redis'),
     crypto: require('./crypto'),
+    snap: require('./snap'),
 }
 
 const repeat = (count, callback) => {

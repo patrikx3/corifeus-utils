@@ -9,6 +9,7 @@ module.exports.exec = (command, options) => {
     }
     options = options || {};
     options.stdio = options.stdio || 'inherit';
+    options.stdin = options.stdin || 'inherit';
 
     options.display = options.display || false;
 
@@ -25,12 +26,8 @@ module.exports.exec = (command, options) => {
     })
 
     if (options.display === true) {
-        run.stdout.on('data', (data) => {
-            console.log(data);
-        });
-        run.stderr.on('data', (data) => {
-            console.error(data);
-        });
+        run.stdout.pipe(process.stdout)
+        run.stderr.pipe(process.stderr)
     }
 
     promise.exec = run;
