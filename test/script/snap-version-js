@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const utils = require('../../src');
+
+const start = async () => {
+
+    const version = await utils.snap.getVersion({ pkg: { name: 'p3x-onenote' } });
+    console.log(version);
+
+}
+
+start();
