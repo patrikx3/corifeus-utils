@@ -5,7 +5,7 @@
 
 
 ---
-# ❤️ Corifeus Utils v2024.4.124
+# ❤️ Corifeus Utils v2024.10.126
 
 
 
@@ -19,7 +19,7 @@
 ### Built on NodeJs version
 
 ```txt
-v22.1.0
+v22.3.0
 ```
 
 
@@ -135,7 +135,7 @@ All my domains, including [patrikx3.com](https://patrikx3.com) and [corifeus.com
 ---
 
 
-[**CORIFEUS-UTILS**](https://corifeus.com/corifeus-utils) Build v2024.4.124
+[**CORIFEUS-UTILS**](https://corifeus.com/corifeus-utils) Build v2024.10.126
 
  [![NPM](https://img.shields.io/npm/v/corifeus-utils.svg)](https://www.npmjs.com/package/corifeus-utils)  [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)
 
