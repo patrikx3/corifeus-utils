@@ -1,11 +1,11 @@
 [//]: #@corifeus-header
 
- [![NPM](https://img.shields.io/npm/v/corifeus-utils.svg)](https://www.npmjs.com/package/corifeus-utils)  [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://paypal.me/patrikx3) [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Corifeus @ Facebook](https://img.shields.io/badge/Facebook-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)  [![Uptime ratio (90 days)](https://network.corifeus.com/public/api/uptime-shield/31ad7a5c194347c33e5445dbaf8.svg)](https://network.corifeus.com/status/31ad7a5c194347c33e5445dbaf8)
+ [![NPM](https://img.shields.io/npm/v/corifeus-utils.svg)](https://www.npmjs.com/package/corifeus-utils)  [![Donate for PatrikX3 / P3X](https://img.shields.io/badge/Donate-PatrikX3-003087.svg)](https://paypal.me/patrikx3) [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Corifeus @ Facebook](https://img.shields.io/badge/Facebook-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)  [![Uptime ratio (90 days)](https://network.corifeus.com/public/api/uptime-shield/31ad7a5c194347c33e5445dbaf8.svg)](https://network.corifeus.com/status/31ad7a5c194347c33e5445dbaf8)
 
 
 
 ---
-# ❤️ Corifeus Utils v2025.4.121
+# ❤️ Corifeus Utils v2025.4.124
 
 
   
@@ -21,7 +21,7 @@
 ### 🛠️ Built on NodeJs version
 
 ```txt
-v22.13.0
+v22.13.1
 ```
 
 
@@ -157,10 +157,9 @@ All my domains, including [patrikx3.com](https://patrikx3.com), [corifeus.eu](ht
 ---
 
 
-[**CORIFEUS-UTILS**](https://corifeus.com/corifeus-utils) Build v2025.4.121
+[**CORIFEUS-UTILS**](https://corifeus.com/corifeus-utils) Build v2025.4.124
 
- [![NPM](https://img.shields.io/npm/v/corifeus-utils.svg)](https://www.npmjs.com/package/corifeus-utils)  [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)
-
+ [![NPM](https://img.shields.io/npm/v/corifeus-utils.svg)](https://www.npmjs.com/package/corifeus-utils)  [![Donate for PatrikX3 / P3X](https://img.shields.io/badge/Donate-PatrikX3-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)
 
 
 
